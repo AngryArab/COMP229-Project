@@ -1,0 +1,30 @@
+POST http://localhost:3000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "displayName" : "Moe",
+    "password" : "1234",
+    "username" : "mmzbi",
+    "emailAddress" : "moe@rsx.ca"
+}
+
+###
+
+POST http://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "password" : "1234",
+    "username" : "mmzbi"
+    
+}
+
+###
+
+GET http://localhost:3000/api/auth/logout HTTP/1.1
+content-type: application/json
+
+
+###
+GET http://localhost:3000/api/movies/list HTTP/1.1
+content-type: application/json

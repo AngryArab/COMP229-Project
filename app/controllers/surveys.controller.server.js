@@ -5,7 +5,7 @@ import surveyModel from '../views/content/models/movies.js';
 import { UserDisplayName } from '../utils/index.js';
 
 export function DisplaySurveyList(req, res, next){
-    surveyModel.find(function(err, moviesCollection) {
+    surveyModel.find(function(err, surveysCollection) {
         if(err){
             console.error(err);
             res.end(err);
